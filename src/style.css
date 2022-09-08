@@ -34,7 +34,19 @@ li>a{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*TEAM PAGE*/
+.memberContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.75em;
     justify-content: center;
     align-items: center;
 }
