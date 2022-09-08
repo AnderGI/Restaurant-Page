@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+ul:only-child{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+}
+li>a{
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 1em;
+    font-weight: 500;
+}
