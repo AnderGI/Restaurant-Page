@@ -11,6 +11,7 @@ body{
     height: 100vh;
 }
 
+/*HEADER*/
 ul:only-child{
     list-style: none;
     display: flex;
@@ -22,4 +23,18 @@ li>a{
     text-transform: lowercase;
     font-size: 1em;
     font-weight: 500;
+}
+
+
+/*HOME PAGE*/
+
+
+/*MAIN #CONTENT*/
+#content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,15 +1,15 @@
 
-export function pageLoad(element){
+export function pageLoad(element,img){
     let pageTitle = document.createElement('h1')
-    pageTitle.textContent = 'Restaurant Title'
+    pageTitle.textContent = 'Welcome to Hells Chicken'
 
     element.append(pageTitle)
-
-    let pageImg = document.createElement('img')
-    pageImg.setAttribute('src', 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600')
-    element.append(pageImg)
+    
+    const claudioRooster = new Image ()
+    claudioRooster.src = img
+    element.append(claudioRooster)
     
     let pageDesc= document.createElement('p')
-    pageDesc.textContent = 'This is a cool restaurant'
+    pageDesc.textContent = `You won't forget us. We guarantee.`
     element.append(pageDesc)
 }
