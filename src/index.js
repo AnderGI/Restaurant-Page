@@ -40,11 +40,10 @@ teamPageEl.addEventListener('click', ()=>{
     container.innerHTML = ""
     container.style.cssText = `
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(1,1fr);
         gap: 2em 1em;
         padding:2em;
 `
-
     const memberOne = new Team('Number One', FamilyGuyRooster, 'Very Beautiful')
     memberOne.render(container)
 
@@ -60,7 +59,7 @@ teamPageEl.addEventListener('click', ()=>{
 })
 
 
-//change the content of the container in the Contact 
-//Page
-const contactPageEl = document.getElementById('contact')
-
+//RENDER CONTACT PAGE
+import { renderMenuPage } from "./contactPageModule.js";
+const menuPageEl = document.getElementById('menu')
+menuPageEl.addEventListener('click', renderMenuPage)

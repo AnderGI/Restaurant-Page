@@ -9,19 +9,34 @@ export class Team{
         let memberContainer = document.createElement('div')
         memberContainer.setAttribute('class', 'memberContainer')
 
-        let teamTitle = document.createElement('h1')
-        teamTitle.textContent = this.member
-    
-        memberContainer.appendChild(teamTitle)
 
+        let imgAndTxtContainer = document.createElement('div')
+
+            imgAndTxtContainer.style.cssText = `
+            display:flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items:center;
+            gap: 0.5em;
+            `
+        
+            let teamTitle = document.createElement('h1')
+            teamTitle.textContent = this.member
+            imgAndTxtContainer.appendChild(teamTitle)
+
+            let memberDescription = document.createElement('p')
+            memberDescription.textContent = this.description
+            imgAndTxtContainer.appendChild(memberDescription)
+
+        
+        memberContainer.appendChild(imgAndTxtContainer)
+  
         const memberIcon = new Image()
         memberIcon.src = this.icon
 
-        memberContainer.appendChild(memberIcon)
+        memberContainer.insertBefore(memberIcon, imgAndTxtContainer)
     
-        let memberDescription = document.createElement('p')
-        memberDescription.textContent = this.description
-        memberContainer.appendChild(memberDescription)
+    
 
         element.appendChild(memberContainer)
     }
