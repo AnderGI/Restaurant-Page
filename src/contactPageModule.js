@@ -33,7 +33,7 @@ export function renderMenuPage (){
         <tr>
             <td>Location</td>
         </tr>
-
+        <tr><th>Price: 30$</th></tr>
     </table>
     `
 }

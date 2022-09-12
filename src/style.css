@@ -79,3 +79,22 @@ footer{
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+/*TABLE*/
+table{ 
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80%;
+    padding: 0.25em 2em;
+}
+tr>th{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightsalmon;
+    font-weight: 700;
+}
+tr>td{
+    font-size: 0.75rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
