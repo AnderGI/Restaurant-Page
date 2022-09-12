@@ -17,6 +17,9 @@ ul:only-child{
     display: flex;
     flex-flow: row wrap;
     gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 li>a{
     text-decoration: none;
@@ -49,4 +52,9 @@ li>a{
     gap: 0.75em;
     justify-content: center;
     align-items: center;
+}
+
+.memberContainer>img{
+    width: 14em;
+    height: 12em;
 }

@@ -2,7 +2,8 @@ import { pageLoad } from "./homePageModule.js";
 import { Team } from "./teamPageModule.js";
 import ClaudioRooster from "./claudio.png";
 import FamilyGuyRooster from "./familyGuyRooster.png";
-import Jerry from "./jerry-smith.png"
+import Jerry from "./jerry-smith.png";
+import Pig from "./spiderPig.png";
 import './style.css';
 
 //render a title, img and a p for the home page
@@ -40,14 +41,22 @@ teamPageEl.addEventListener('click', ()=>{
     container.style.cssText = `
         display: grid;
         grid-template-columns:repeat(2,1fr);
-        gap: 3em 1em;
+        gap: 2em 1em;
+        padding:2em;
 `
 
     const memberOne = new Team('Number One', FamilyGuyRooster, 'Very Beautiful')
-    memberOne.render(container, FamilyGuyRooster)
+    memberOne.render(container)
 
-    const memberTwo = new Team('Number Two',Jerry, 'Always running')
-    memberTwo.render(container, Jerry)
+    const memberTwo = new Team('Number Three',ClaudioRooster, 'At your service')
+    memberTwo.render(container)
+
+    const memberThree = new Team('Number Two',Jerry, 'Always running')
+    memberThree.render(container)
+
+    const speciality = new Team ('Our speciality', Pig, 'Big and gross')
+    speciality.render(container)
+    
 })
 
 
