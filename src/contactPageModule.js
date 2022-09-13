@@ -1,7 +1,5 @@
-export function renderMenuPage (){
-    const container = document.getElementById('content')
-    container.innerHTML = "";
-    container.innerHTML = `
+export function renderMenuPage (element){
+    element.innerHTML = `
     <table>
      
         <tr>

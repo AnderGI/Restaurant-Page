@@ -1,5 +1,18 @@
+export function homePageStyler (element){
+    element.style.cssText = `
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+`
 
-export function pageLoad(element,img){
+}
+
+
+
+export function homePageRenderer(element,img){
     let pageTitle = document.createElement('h1')
     pageTitle.textContent = 'Welcome to Hells Chicken'
 

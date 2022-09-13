@@ -1,4 +1,4 @@
-import { pageLoad } from "./homePageModule.js";
+import { homePageRenderer } from "./homePageModule.js";
 import { Team } from "./teamPageModule.js";
 import ClaudioRooster from "./claudio.png";
 import FamilyGuyRooster from "./familyGuyRooster.png";
@@ -6,44 +6,31 @@ import Jerry from "./jerry-smith.png";
 import Pig from "./spiderPig.png";
 import './style.css';
 
-//render a title, img and a p for the home page
-const homePageEl = document.getElementById('home')
 
-const container = document.getElementById('content')
-container.style.cssText = `
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 3em;
-    justify-content: center;
-    align-items: center;
-`
+//RENDER HOME PAGE
+import {homePageStyler} from "./homePageModule.js";
+import { domCleaner } from "./clearPage.js";
 
-pageLoad(container,ClaudioRooster)
+const homePageEl = document.getElementById('home')  //HOME BTN
+const container = document.getElementById('mainContent') //MAIN TAG
+
+homePageStyler(container)
+homePageRenderer(container,ClaudioRooster)
 
 homePageEl.addEventListener('click', ()=>{
-    container.innerHTML = ""
-    container.style.cssText = `
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 3em;
-    justify-content: center;
-    align-items: center;
-`
-    pageLoad(container,ClaudioRooster)
+    domCleaner(container)
+    homePageStyler(container)
+    homePageRenderer(container,ClaudioRooster)
 })
 
-//chage it for the Team Page. Just change the content
+
+//RENDER TEAM PAGE
+import { teamPageStyler } from "./teamPageModule.js";
 const teamPageEl = document.getElementById('team')
 teamPageEl.addEventListener('click', ()=>{
-    container.innerHTML = ""
-    container.style.cssText = `
-        display: grid;
-        grid-template-columns:repeat(1,1fr);
-        gap: 2em 1em;
-        padding:2em;
-`
+    domCleaner(container)
+    teamPageStyler(container)
+    
     const memberOne = new Team('Number One', FamilyGuyRooster, 'Very Beautiful')
     memberOne.render(container)
 
@@ -62,4 +49,7 @@ teamPageEl.addEventListener('click', ()=>{
 //RENDER CONTACT PAGE
 import { renderMenuPage } from "./contactPageModule.js";
 const menuPageEl = document.getElementById('menu')
-menuPageEl.addEventListener('click', renderMenuPage)
+menuPageEl.addEventListener('click', ()=>{
+    domCleaner(container)
+    renderMenuPage(container)
+})

@@ -41,3 +41,13 @@ export class Team{
         element.appendChild(memberContainer)
     }
 }
+
+export function teamPageStyler (element){
+    element.style.cssText = `
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    gap: 2em 1em;
+    padding:2em;
+`
+}
+
