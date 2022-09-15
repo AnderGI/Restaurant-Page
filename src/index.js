@@ -31,16 +31,16 @@ teamPageEl.addEventListener('click', ()=>{
     domCleaner(container)
     teamPageStyler(container)
     
-    const memberOne = new Team('Number One', FamilyGuyRooster, 'Very Beautiful')
+    const memberOne = new Team('The Chef-E-O', FamilyGuyRooster, 'I am the Chef-E-O of this company')
     memberOne.render(container)
 
-    const memberTwo = new Team('Number Three',ClaudioRooster, 'At your service')
+    const memberTwo = new Team('Claudio the Rooster',ClaudioRooster, 'I am the head waiter. At your service')
     memberTwo.render(container)
 
-    const memberThree = new Team('Number Two',Jerry, 'Always running')
+    const memberThree = new Team('The dishwasher',Jerry, 'Hello everyone!')
     memberThree.render(container)
 
-    const speciality = new Team ('Our speciality', Pig, 'Big and gross')
+    const speciality = new Team ('Our speciality', Pig, 'Not him but his firstborns.')
     speciality.render(container)
     
 })

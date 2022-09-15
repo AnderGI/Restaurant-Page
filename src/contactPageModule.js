@@ -6,30 +6,30 @@ export function renderMenuPage (element){
             <th>Starters</th>
         </tr>
         <tr>
-            <td>Timetable</td>
+            <td>Vegetarian salad</td>
         </tr>
         <tr>
-            <td>Location</td>
+            <td>Wet soup</td>
         </tr>
 
         <tr>
             <th>Main Dish</th>
         </tr>
         <tr>
-            <td>Timetable</td>
+            <td>Porkys children</td>
         </tr>
         <tr>
-            <td>Location</td>
+            <td>The bosses freid eggs</td>
         </tr>
 
         <tr>
             <th>Disses</th>
         </tr>
         <tr>
-            <td>Timetable</td>
+            <td>White Brownie</td>
         </tr>
         <tr>
-            <td>Location</td>
+            <td>Rusty fruit</td>
         </tr>
         <tr><th>Price: 30$</th></tr>
     </table>

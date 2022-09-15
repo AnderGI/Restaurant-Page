@@ -59,8 +59,6 @@ li>a:hover{
     justify-content: center;
     align-items: center;
     gap:0.5em;
-    border: 2px solid olive;
-    border-radius: 10px;
     padding: 1em 2em;
 }
 
@@ -83,18 +81,23 @@ footer{
 
 /*TABLE*/
 table{ 
-    border: 1px solid black;
-    border-radius: 10px;
     height: 80%;
     padding: 0.25em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    column-gap: 0.75em;
 }
+
 tr>th{
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightsalmon;
     font-weight: 700;
+    width: 100%;
 }
 tr>td{
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
